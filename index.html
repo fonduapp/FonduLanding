@@ -8,6 +8,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Fredoka+One|Montserrat&display=swap" rel="stylesheet">
 	<!-- javascript -->
 	<script src="script.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-90294504-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-90294504-2');
+	</script>
+
 </head>
 
 <body>
@@ -20,7 +30,7 @@
 			<p class="text">
 				Some more words here maybe
 			</p>
-			<a class="text button" href="#">
+			<a class="text button" href="#" onClick=”_gaq.push([‘_trackEvent’, ‘links’, ‘click’, ‘beta’]);”>
 				sign up to try our beta
 			</a>
 		</div>
