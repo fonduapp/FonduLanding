@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<!-- styles -->
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Fredoka+One|Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredoka+One|Raleway:500,700,900&display=swap" rel="stylesheet">
 	<!-- javascript -->
 	<script src="script.js"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -20,17 +20,16 @@
 
 </head>
 
-<body>
+<body onload="randomizeDesc()">
 	<div class="container">
 		<h3 class="title">fondu</h3>
 		<div class="subcontainer">
-			<h1 class="text">
-				Your personalized healthy relationship training.
+			<h1 class="text" id = "fondu-header">
 			</h1>
-			<p class="text">
-				Some more words here maybe
+			<p class="text" id="fondu-desc">
 			</p>
-			<a class="text button" href="#" onClick="gtag('event', 'click', { 'version': 'health'});">
+			
+			<a id ="beta-button" class="text button" href="https://forms.gle/2hgaMSWjxJxfKzF28" onClick="gtag('event', 'click', { 'event_label': 'health'});">
 				sign up to try our beta
 			</a>
 		</div>

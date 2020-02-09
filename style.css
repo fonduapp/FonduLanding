@@ -16,6 +16,11 @@ h1 {
 	font-weight: 900;
 	font-size: 3em;
 }
+p{
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
 a{
 	text-decoration: none;
 }
@@ -39,11 +44,27 @@ img{
 
 }
 .text{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	margin-right: 20%;
 	margin-left: 20%;
 	text-align: center;
 	color: var(--primary-color);
+}
+
+#fondu-header{
+	margin-top: 3%;
+	margin-bottom: 1%;
+}
+
+#fondu-desc{
+	margin: 0% 25% 3% 25%;
+	opacity: 0.6;
+
+}
+
+#more-fondu-desc{
+	margin-top:2%;
+	font-weight: 700;
 }
 
 .button{
@@ -73,7 +94,7 @@ img{
 	flex-direction: column;
 	flex:1;
 	max-height: 100%;
-	margin-bottom: 7vh;
+	margin-bottom: 3%;
 
 }
 
