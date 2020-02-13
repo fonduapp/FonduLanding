@@ -127,7 +127,6 @@ img{
 		align-items: flex-start;
 		flex-direction: column;
 		flex:1;
-		max-height: 100%;
 		margin-bottom: 7%;
 	}
 
