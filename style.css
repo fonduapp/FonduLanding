@@ -79,7 +79,7 @@ img{
 }
 
 .container {
-	display: flex;
+	display: -webkit-flex;
 	flex-direction: column;
 	height: 100%;
 
@@ -89,7 +89,7 @@ img{
 .subcontainer{
 	margin-left: 5%;
 	margin-right: 5%;
-	display: flex;
+	display: -webkit-flex;
 	align-items: center;
 	flex-direction: column;
 	flex:1;
@@ -97,7 +97,7 @@ img{
 }
 
 .images {
-	display: flex;
+	display: -webkit-flex;
 	flex-direction: row;
 	justify-content: center;
 }
@@ -123,7 +123,7 @@ img{
 	.subcontainer{
 		margin-left: 10%;
 		margin-right: 10%;
-		display: flex;
+		display: -webkit-flex;
 		align-items: flex-start;
 		flex-direction: column;
 		flex:1;
