@@ -69,7 +69,7 @@ img{
 .button{
 	background-color: var(--primary-color);
 	padding:1.5%;
-	padding-right:3%; 
+	padding-right:3%;
 	padding-left:3%;
 	color:white;
 	align-self: center;
@@ -103,4 +103,20 @@ img{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+}
+
+#img1 {
+  z-index: 1;
+  width: 80%;
+  left: 400px;top: 250px;position: absolute;
+  height: auto;
+}
+
+#img2{
+left: 400px;
+top: 250px;
+position: absolute;
+z-index: 0;
+width: 70%;
+height: auto;
 }
