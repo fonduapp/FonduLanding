@@ -1,21 +1,24 @@
 
 <html>
 <head>
-<title>shipshape</title>
+  <title>shipshape</title>
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Raleway:500,700,900&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+  <script src="script.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-90294504-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-90294504-2');
+	</script>
 </head>
 
-<script>
-function myFunction() {
-  var x =  screen.width;
-  document.getElementById("demo").innerHTML = x;
-}
-</script>
-<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
-
 <style>
+
 body{
-  background-attachment: fixed;
-  margin: 0;
   font-family: 'Quicksand';font-size: 22px;
   text-align:left;
   background:
@@ -24,15 +27,14 @@ body{
      linear-gradient(120deg , transparent 60%,#666666 60%) bottom no-repeat,
      linear-gradient(120deg , transparent 50%,#444444 50%) bottom no-repeat;
   background-color: #333333;
-
   height:600px;
   left: 0%;
   line-height:60px;
   padding:0px;
   color:white;
-  position:relative;
-
+  vertical-align: middle;
 }
+
 #header{
   background-color: #FFFFFF;
   font-size: 14px;
@@ -40,48 +42,81 @@ body{
   opacity: .5;
   padding-left: 50px;
   text-align: left;
-
-
 }
 
 #catch{
 	color: #FFFFFF;
+  font-size: 40px;
 	line-height: 5px;
-  padding-top: 10px;
+  padding-top: 200px;
   padding-left:20px;
-  padding-bottom: 10px;
+  padding-bottom:0px;
+
 }
 
 #motto{
 	color: #FFFFFF;
   text-align: right;
+  display:inline-block;
+  padding-left: 70px;
+  flex-direction:column;
 	line-height: 20px;
-  left: 50%;
 }
 
-#button{
+#shape{
+  left: 466px;
+  top: 450px;
+  height:300px;
+  width: 300px;
+  background-color: #FF4F84;
+  position: absolute;
+  background: linear-gradient(245deg , transparent 60%,#FF8F84 60%) top no-repeat;
+  z-index: 10;
+
+}
+
+.button{
+  display: inline-block;
+  background-color: #FFFFFF;
+  color: #FF8F84;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Quicksand';
+  border-radius: 10px;
+  padding: 0px 20px;
+  margin: 4px 2px;
+
+
+
 
 }
 
 
 </style>
-</head>
-<body>
+
+<body scroll="no" style="overflow: hidden">
 
 
 	<div id = "header">
 		<h1>shipshape</h1>
     </div>
 
+   <div  id = "img1" style = "left: 750px;top: 400px;position: absolute;"> <img  src="assets/screen-1.png" style = "transform: rotate(36deg); width:325px;height:450px;"> </div>
 
-        <div id = "catch">
-			<h2>Personalized</h2>
-    		<h2>Relationship</h2>
-    		<h2>Training</h2>
-            <div id="motto">
-				<p>Get your relationship into shape</p>
-     		</div>
-        </div>
+   <div  id = "img2" style = "left: 550px; top: 300px;position: absolute;"> <img  src="assets/screen-2.png" style = "transform: rotate(10deg); width:325px;height:450px;"></div>
+   <div id = "catch">
+       <h2>Personalized</h2>
+       <h2>Relationship</h2>
+       <h2>Training</h2>
+     </div>
+   <div id="motto">
+        <p>Get your relationship into shape</p>
+      <a  class="button" href="https://forms.gle/2hgaMSWjxJxfKzF28" onClick="gtag('event', 'click', { 'event_label': 'health'});">
+         sign up for free trial
+      </a>
+   </div>
+   <div id = "shape"></div>
+
 
 
 </body>
