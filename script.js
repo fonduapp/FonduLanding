@@ -1,6 +1,6 @@
 const fonduHeaders = {
 	'health':"Your personalized healthy relationship training.",
-	'fun':"Your personalized healthy relationship advisor."
+	'fun':"Your personalized healthy relationship guide."
 }
 
 const fonduDescriptions = {
@@ -15,7 +15,7 @@ function getRandomInt(max) {
 }
 
 function randomizeDesc(){
-	let rand_int = getRandomInt(2); //choose between 0 and 1
+	let rand_int = 1; //getRandomInt(2); //choose between 0 and 1
 	let fondu_head = fonduHeaders[randIntLink[rand_int]];
 	let fondu_desc = fonduDescriptions[randIntLink[rand_int]];
 
